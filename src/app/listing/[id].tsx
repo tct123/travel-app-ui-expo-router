@@ -17,7 +17,7 @@ import Animated, {
   interpolate,
   useAnimatedRef,
   useAnimatedStyle,
-  useScrollViewOffset,
+  useScrollOffset,
 } from "react-native-reanimated";
 import Colors from "../../constants/Colors";
 import listingData from "../../data/destinations.json";
@@ -35,7 +35,7 @@ const ListingDetails = () => {
   const router = useRouter();
 
   const scrollRef = useAnimatedRef<Animated.ScrollView>();
-  const scrollOffset = useScrollViewOffset(scrollRef);
+  const scrollOffset = useScrollOffset(scrollRef);
   const imageAnimatedStyle = useAnimatedStyle(() => {
     return {
       transform: [
