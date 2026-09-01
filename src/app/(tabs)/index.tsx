@@ -1,5 +1,5 @@
 import { Ionicons } from "@expo/vector-icons";
-import { useHeaderHeight } from "@react-navigation/elements";
+import { useHeaderHeight } from "expo-router/react-navigation";
 import { Stack } from "expo-router";
 import { useState } from "react";
 import {
