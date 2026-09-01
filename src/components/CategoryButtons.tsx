@@ -1,3 +1,5 @@
+import { MaterialCommunityIcons } from "@expo/vector-icons";
+import { useRef, useState } from "react";
 import {
   ScrollView,
   StyleSheet,
@@ -5,10 +7,8 @@ import {
   TouchableOpacity,
   View,
 } from "react-native";
-import React, { useRef, useState } from "react";
-import Colors from "@/constants/Colors";
-import destinationCategories from "@/data/categories";
-import { MaterialCommunityIcons } from "@expo/vector-icons";
+import Colors from "../constants/Colors";
+import destinationCategories from "../data/categories";
 
 type Props = {
   onCagtegoryChanged: (category: string) => void;

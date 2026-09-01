@@ -1,3 +1,6 @@
+import { FontAwesome5, Ionicons } from "@expo/vector-icons";
+import { Link } from "expo-router";
+import { useEffect, useState } from "react";
 import {
   FlatList,
   Image,
@@ -7,11 +10,8 @@ import {
   TouchableOpacity,
   View,
 } from "react-native";
-import React, { useEffect, useState } from "react";
-import { ListingType } from "@/types/listingType";
-import Colors from "@/constants/Colors";
-import { FontAwesome5, Ionicons } from "@expo/vector-icons";
-import { Link } from "expo-router";
+import Colors from "../constants/Colors";
+import { ListingType } from "../types/listingType";
 
 type Props = {
   listings: any[];

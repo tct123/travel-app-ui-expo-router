@@ -1,3 +1,7 @@
+import { Ionicons } from "@expo/vector-icons";
+import { useHeaderHeight } from "@react-navigation/elements";
+import { Stack } from "expo-router";
+import { useState } from "react";
 import {
   Image,
   ScrollView,
@@ -7,16 +11,12 @@ import {
   TouchableOpacity,
   View,
 } from "react-native";
-import React, { useState } from "react";
-import { Stack } from "expo-router";
-import { Ionicons } from "@expo/vector-icons";
-import Colors from "@/constants/Colors";
-import { useHeaderHeight } from "@react-navigation/elements";
-import CategoryButtons from "@/components/CategoryButtons";
-import Listings from "@/components/Listings";
-import listingData from "@/data/destinations.json";
-import GroupListings from "@/components/GroupListings";
-import groupData from "@/data/groups.json";
+import CategoryButtons from "../../components/CategoryButtons";
+import GroupListings from "../../components/GroupListings";
+import Listings from "../../components/Listings";
+import Colors from "../../constants/Colors";
+import listingData from "../../data/destinations.json";
+import groupData from "../../data/groups.json";
 
 const Page = () => {
   const headerHeight = useHeaderHeight();

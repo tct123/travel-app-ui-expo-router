@@ -1,23 +1,17 @@
 import {
-  Dimensions,
-  Image,
-  ScrollView,
-  StyleSheet,
-  Text,
-  TouchableOpacity,
-  View,
-} from "react-native";
-import React from "react";
-import { Stack, useLocalSearchParams, useRouter } from "expo-router";
-import { ListingType } from "@/types/listingType";
-import listingData from "@/data/destinations.json";
-import {
   Feather,
   FontAwesome,
   FontAwesome5,
   Ionicons,
 } from "@expo/vector-icons";
-import Colors from "@/constants/Colors";
+import { Stack, useLocalSearchParams, useRouter } from "expo-router";
+import {
+  Dimensions,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View
+} from "react-native";
 import Animated, {
   SlideInDown,
   interpolate,
@@ -25,6 +19,9 @@ import Animated, {
   useAnimatedStyle,
   useScrollViewOffset,
 } from "react-native-reanimated";
+import Colors from "../../constants/Colors";
+import listingData from "../../data/destinations.json";
+import { ListingType } from "../../types/listingType";
 
 const { width } = Dimensions.get("window");
 const IMG_HEIGHT = 300;

@@ -1,3 +1,4 @@
+import { Ionicons } from "@expo/vector-icons";
 import {
   FlatList,
   Image,
@@ -6,10 +7,8 @@ import {
   Text,
   View,
 } from "react-native";
-import React from "react";
-import { GroupType } from "@/types/groupType";
-import Colors from "@/constants/Colors";
-import { Ionicons } from "@expo/vector-icons";
+import Colors from "../constants/Colors";
+import { GroupType } from "../types/groupType";
 
 const GroupListings = ({ listings }: { listings: GroupType[] }) => {
   const renderItem: ListRenderItem<GroupType> = ({ item }) => {
